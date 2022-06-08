@@ -308,6 +308,7 @@ body {
 /* -------------------------------------------EXAMPLE------------------------------------------ */
 .example {
     position: relative;
+    background-image: linear-gradient(#fff 0, #fff 200px,#f2f2f2 200px,#f2f2f2 100%);
 }
 .example-title {
     padding-top: 58px;
@@ -322,7 +323,7 @@ body {
 .example-wrapper {
     display: flex;
     flex-direction: column;
-    background-color: var(--secondary-bg-color);
+
     width: 1440px;
     height: 462px;
 }
@@ -380,6 +381,9 @@ body {
     align-items: center;
 justify-content: space-between;
 }
+.social-links-item{
+    margin: 0 9px;
+}
 .social-links-link {
     display: flex;
     justify-content: space-between;
@@ -390,6 +394,7 @@ justify-content: space-between;
 .link-academy {
     display: flex;
     align-items: center;
+    color: var(--secondary-text-color);
 }
 .social-icon-academy {
     padding-left: 22px;
