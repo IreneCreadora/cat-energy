@@ -188,7 +188,7 @@ body {
     background-color: var(--secondary-bg-color);
     width: 570px;
     height: 374px;
-
+    position: relative;
 }
 .selection-title {
     margin-top: 47px;
@@ -201,11 +201,14 @@ body {
     text-transform: uppercase;
     color: var(--primary-text-color);
     align-items: center;
-    justify-content: start;
+    justify-content: center;
 }
 .slim-cat-icon {
     display: flex;
     margin-left: 100px;
+    position: absolute;
+    top:41px;
+    left: 67px;
 }
 .slim-cat {
     display: flex;
@@ -215,14 +218,25 @@ body {
     justify-content: start;
     align-items: start;
 }
+.pro-cat-icon {
+    display: flex;
+    position: absolute;
+    top:67px;
+    left: 33px;
+}
 .icon-slim::before {
     content: "";
     width: 100px;
     height: 100px;
     border-radius: 50%;
     background-color: var(--accent-color);
-    margin-left: 52px;
-    margin-right: 62px;
+}
+.icon-pro::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
 }
 .selection-text {
     display: flex;
@@ -245,41 +259,138 @@ body {
     color: var(--accent-color);
 }
 /* -------------------------------------------DISCRIPTION--------------------------------------- */
-    .discription {
-    }
-    .discription-title {
-    }
-    .discription-list {
-    }
-    .discription-item {
-    }
-    .number-description-list {
-    }
-    .product-description {
-    }
+.discription {
+    margin-top: 70px;
+}
+.discription-title {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1;
+    text-align:start;
+}
+.discription-list {
+    display: flex;
+}
+.discription-item {
+    margin-top: 32px;
+    margin-bottom: 11px;
+    width: 245px;
+    height: 280px;
+    outline: 1px solid green;
+}
+.discription-item:nth-child(n+2){
+    margin-left: 80px;}
+.number-description-list::before{
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-color: var(--accent-color);
+    margin-top: 40px;
+}
+.number-description-list {
+    display: flex;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 1;
+    justify-content: space-between;
+    color: var(--secondary-bg-color);
+}
+
+.product-description {
+    display: flex;
+    text-align: start;
+    color: var(--secondary-text-color);    
+}
 /* -------------------------------------------EXAMPLE------------------------------------------ */
-    .example {
-    }
-    .example-title {
-    }
-    .example-text {
-    }
-    .example-numbers {
-    }
-    .example-description {
-    }
-    .example-price {
-    }
+.example {
+    position: relative;
+}
+.example-title {
+    padding-top: 58px;
+    padding-bottom: 76px;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1;  
+    text-align: start; 
+}
+.example-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-bg-color);
+    width: 1440px;
+    height: 462px;
+}
+.example-text {
+    color: var(--secondary-text-color);
+    max-width: 436px;
+}
+.example-numbers-box {
+    display: flex;
+}
+.example-numbers {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.23;
+}
+.example-description {
+    font-size: 14px;
+    line-height: 1;
+    color: var(--secondary-text-color);
+}
+.example-price {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+.visual-example {
+    position: absolute;
+    top: 0;
+    right: 25%;
+    display: flex;
+    max-width: 690px;
+}
+
 /* -------------------------------------------FOOTER--------------------------------------- */
     .address {
     }
     .address-text-box {
     }
+.footer-bottom-line{
+    padding-top: 57px;
+    padding-bottom: 58px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
     .logo-footer {
     }
-    .social-links {
-    }
-    .social-links-link {
-    }
-    .social-icon {
-    }
+.social-links {
+    display: flex;
+    align-items: center;
+justify-content: space-between;
+}
+.social-links-link {
+    display: flex;
+    justify-content: space-between;
+}
+.social-icon {
+
+}
+.link-academy {
+    display: flex;
+    align-items: center;
+}
+.social-icon-academy {
+    padding-left: 22px;
+}
